@@ -1,0 +1,27 @@
+# --- Machine Learning & NLP Core ---
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.13.0
+scikit-learn>=1.2.2
+numpy>=1.24.0
+pandas>=2.0.0
+
+# --- API Backend & Database ---
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+pydantic>=2.0.0
+sqlalchemy>=2.0.0
+asyncpg>=0.28.0
+
+# --- Frontend Dashboard ---
+streamlit>=1.25.0
+
+# --- Utilities & Testing ---
+python-dotenv>=1.0.0
+pytest>=7.4.0
+
+# --- Document Processing & Retrieval ---
+sentence-transformers>=2.2.2
+captum>=0.6.0
+PyPDF2>=3.0.0
+aiosqlite>=0.19.0

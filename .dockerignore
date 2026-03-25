@@ -1,0 +1,51 @@
+# ----------------------------------
+# 1. Sensitive Information & Secrets
+# ----------------------------------
+.env
+.env.*
+*.pem
+*.key
+secret*.json
+
+# ----------------------------------
+# 2. Virtual Environments 
+# ----------------------------------
+# CRITICAL: Do not copy your Windows environment into a Linux container!
+env/
+venv/
+.venv/
+env.bak/
+
+# ----------------------------------
+# 3. Local Databases
+# ----------------------------------
+# Prevents uploading your local test database. Let the container make a fresh one.
+*.db
+*.sqlite3
+halluciguard.db
+
+# ----------------------------------
+# 4. Python Caches & Build Artifacts
+# ----------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+# ----------------------------------
+# 5. IDEs, Git, & Notebooks
+# ----------------------------------
+.vscode/
+.idea/
+.git/
+.gitignore
+*.swp
+.DS_Store
+
+# Jupyter (Ignore checkpoints and your research notebooks to keep the image small)
+.ipynb_checkpoints/
+*.ipynb
