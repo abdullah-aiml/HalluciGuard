@@ -1,0 +1,44 @@
+# =========================
+# 1. Python & Virtual Environments
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# =========================
+# 2. Environment Variables & Secrets
+# =========================
+# NEVER upload API keys or database connection strings to GitHub!
+.env
+.streamlit/secrets.toml
+
+# =========================
+# 3. Databases
+# =========================
+# Ignore local SQLite files since you can easily swap the FastAPI 
+# architecture to use PostgreSQL for a production environment later.
+*.db
+*.sqlite3
+halluciguard.db
+
+# =========================
+# 4. Machine Learning & Data 
+# =========================
+# Blocks heavy model weights, test PDFs, and experiment tracking
+*.pdf
+wandb/
+mlruns/
+*.pt
+*.pth
+*.h5
+
+# =========================
+# 5. OS & Editor Files (VS Code / Windows / Mac)
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
